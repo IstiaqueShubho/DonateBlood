@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1003217025300",
+    "firebase_url": "https://donateblood-72a1f.firebaseio.com",
+    "project_id": "donateblood-72a1f",
+    "storage_bucket": "donateblood-72a1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003217025300:android:1288ed238462d159",
+        "android_client_info": {
+          "package_name": "com.example.istiaque.donateblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003217025300-abgvui6jv9csaiuurs52ts7dupabtupb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNpTEMrCTGmyjDy_XUVnoKodeSyfvQP6k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

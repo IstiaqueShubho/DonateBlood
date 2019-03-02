@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.istiaque.donateblood.Registration">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="390dp"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:hint="Name"
+                android:layout_marginTop="20dp"
+                android:height="100dp"
+                android:paddingLeft="25dp"
+                android:textSize="20dp"
+                android:elevation="2dp"
+                android:background="@drawable/rounded_textview"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:height="100dp"
+                android:elevation="2dp"
+                android:background="@drawable/rounded_textview"
+                android:hint="Email"
+                android:paddingLeft="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/bloodgroup"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:height="100dp"
+                android:elevation="2dp"
+                android:background="@drawable/rounded_textview"
+                android:hint="Blood Group"
+                android:paddingLeft="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:height="100dp"
+                android:elevation="2dp"
+                android:background="@drawable/rounded_textview"
+                android:hint="Location"
+                android:paddingLeft="25dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lastdonation"
+                    android:layout_width="340dp"
+                    android:layout_height="40dp"
+                    android:hint="Last Date of Donation"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp" />
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:elevation="2dp"
+                        android:background="@drawable/rounded_textview"
+                        android:hint="Date"
+                        android:paddingLeft="8dp"
+                        android:textSize="18dp"/>
+
+                    <EditText
+                        android:id="@+id/month"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:elevation="2dp"
+                        android:background="@drawable/rounded_textview"
+                        android:hint="Month"
+                        android:paddingLeft="7dp"
+                        android:textSize="17dp"/>
+
+                    <EditText
+                        android:id="@+id/year"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:elevation="2dp"
+                        android:background="@drawable/rounded_textview"
+                        android:hint="Year"
+                        android:paddingLeft="40dp"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/rounded_textview"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
