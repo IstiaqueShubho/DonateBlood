@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF122739"
+    android:background="@drawable/gradient_background"
     tools:context="com.example.istiaque.donateblood.Main">
 
     <TextView
@@ -36,7 +36,7 @@
         android:paddingBottom="50dp"
         android:paddingTop="40dp"
         android:text="Find Donar"
-        android:textColor="#F9F9F9"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -20,7 +20,18 @@ public class Main extends AppCompatActivity {
         Bedonar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Main.this,Registration.class));
+                Intent Intent = new Intent(Main.this,Registration.class);
+                Intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(Intent);
+            }
+        });
+
+        Finddonar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(Main.this,PhoneAuth.class);
+                Intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(Intent);
             }
         });
     }

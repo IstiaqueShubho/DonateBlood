@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registration" />
-        <activity android:name=".Userprofile"></activity>
+        <activity android:name=".Userprofile" />
+        <activity android:name=".PhoneAuth" />
+        <activity android:name=".Verification"></activity>
     </application>
 
 </manifest>

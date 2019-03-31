@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -30,10 +31,13 @@ public class Registration extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener authStateListener;
     private DatabaseReference firebaseDatabase;
 
+    String phnnumber;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
+        phnnumber = getIntent().getStringExtra("phnnumber");
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -91,11 +95,12 @@ public class Registration extends AppCompatActivity {
             Toast.makeText(this,"Fill all the areas with Valid Information.",Toast.LENGTH_LONG).show();
         }
         else{
-            String user_id = firebaseDatabase.push().getKey();
+            String user_id = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
             firebaseDatabase.child(user_id).child("Name").setValue(name);
             firebaseDatabase.child(user_id).child("Email").setValue(email);
             firebaseDatabase.child(user_id).child("Bloodgroup").setValue(bloodgroup);
+            firebaseDatabase.child(user_id).child("Phone Number").setValue(phnnumber);
             firebaseDatabase.child(user_id).child("Location").setValue(location);
             firebaseDatabase.child(user_id).child("LastDonation").child("Date").setValue(date);
             firebaseDatabase.child(user_id).child("LastDonation").child("Month").setValue(month);
@@ -104,7 +109,7 @@ public class Registration extends AppCompatActivity {
             Toast.makeText(this,"Registration Successful.",Toast.LENGTH_LONG).show();
 
             Intent user = new Intent(Registration.this,Userprofile.class);
-            user.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            user.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(user);
         }
     }
