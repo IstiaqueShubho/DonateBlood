@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DonateBlood</string>
+
+    <string name="API_KEY" translatable="false">AIzaSyBSpe5Q1r6C1p9OBv_oC2QZ3ppZQl3ts4o</string>
+    <string name="title_activity_maps">Map</string>
+
 </resources>

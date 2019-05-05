@@ -33,8 +33,8 @@ public class PhoneAuth extends AppCompatActivity {
                 number = "+880" + number;
                 Intent Verify = new Intent(PhoneAuth.this,Verification.class);
                 Verify.putExtra("number",number);
-                Verify.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(Verify);
+                finish();
             }
         });
     }
